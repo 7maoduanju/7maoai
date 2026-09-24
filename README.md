@@ -5,7 +5,7 @@
 
 🔥 最新官方地址（国内直连，极速秒播）： https://7maoduanju.com/
 
-🛡️ 备用防失联地址（建议收藏）： https://7maoduanju.com/
+🛡️ 备用防失联地址（建议收藏）： https://7maotv4.com/
 
 🐦 官方推特（Twitter/X）： https://x.com/7maoduanju_com
 
