@@ -1,0 +1,142 @@
+{
+  "monitor": {
+    "interval_sec": 60,
+    "cpu_threshold": 80,
+    "trigger_count": 5,
+
+    "recover_cpu": 70,
+    "recover_count": 5,
+
+    "critical_cpu": 95,
+    "critical_after_min": 10,
+
+    "api_fail_alert_count": 5,
+
+    "service_check_interval_sec": 300,
+    "service_fail_trigger": 2,
+
+    "diagnostic_max_chars": 24000
+  },
+
+  "deepseek": {
+    "api_key": "你的DeepSeek_API_KEY",
+    "url": "https://api.deepseek.com/chat/completions",
+    "model": "deepseek-flash",
+    "timeout": 25,
+    "max_tokens": 650,
+    "max_output_chars": 1200
+  },
+
+  "telegram": {
+    "bot_token": "你的TG_BOT_TOKEN",
+    "chat_id": "-1001234567890",
+    "mention": "@你的TG用户名"
+  },
+
+  "servers": [
+    {
+      "name": "Server-A",
+
+      "local": true,
+
+      "bt_url": "https://127.0.0.1:8888",
+      "bt_api_key": "A服务器宝塔API_KEY",
+
+      "verify_tls": false,
+
+      "required_services": [
+        "nginx",
+        "php",
+        "mysql"
+      ]
+    },
+
+    {
+      "name": "Server-B",
+
+      "local": false,
+
+      "bt_url": "https://SERVER_B_IP:8888",
+      "bt_api_key": "B服务器宝塔API_KEY",
+
+      "verify_tls": false,
+
+      "ssh_host": "SERVER_B_IP",
+      "ssh_port": 22,
+      "ssh_user": "root",
+      "ssh_key": "/root/.ssh/id_ed25519",
+
+      "required_services": [
+        "nginx",
+        "php",
+        "mysql"
+      ]
+    },
+
+    {
+      "name": "Server-C",
+
+      "local": false,
+
+      "bt_url": "https://SERVER_C_IP:8888",
+      "bt_api_key": "C服务器宝塔API_KEY",
+
+      "verify_tls": false,
+
+      "ssh_host": "SERVER_C_IP",
+      "ssh_port": 22,
+      "ssh_user": "root",
+      "ssh_key": "/root/.ssh/id_ed25519",
+
+      "required_services": [
+        "nginx",
+        "php",
+        "mysql"
+      ]
+    },
+
+    {
+      "name": "Server-D",
+
+      "local": false,
+
+      "bt_url": "https://SERVER_D_IP:8888",
+      "bt_api_key": "D服务器宝塔API_KEY",
+
+      "verify_tls": false,
+
+      "ssh_host": "SERVER_D_IP",
+      "ssh_port": 22,
+      "ssh_user": "root",
+      "ssh_key": "/root/.ssh/id_ed25519",
+
+      "required_services": [
+        "nginx",
+        "php",
+        "mysql"
+      ]
+    },
+
+    {
+      "name": "Server-E",
+
+      "local": false,
+
+      "bt_url": "https://SERVER_E_IP:8888",
+      "bt_api_key": "E服务器宝塔API_KEY",
+
+      "verify_tls": false,
+
+      "ssh_host": "SERVER_E_IP",
+      "ssh_port": 22,
+      "ssh_user": "root",
+      "ssh_key": "/root/.ssh/id_ed25519",
+
+      "required_services": [
+        "nginx",
+        "php",
+        "mysql"
+      ]
+    }
+  ]
+}
