@@ -1,0 +1,29 @@
+cd /opt/server_guard
+
+cat > .gitignore <<'EOF'
+# Sensitive configuration
+config.json
+
+# Runtime state
+state/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary files
+*.tmp
+*.log
+
+# SSH / Secrets
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Editor
+.vscode/
+.idea/
+EOF
